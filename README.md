@@ -679,7 +679,7 @@
 	<P><STRONG><SPAN LANG="en">Author: </SPAN></STRONG><SPAN LANG="en">Daeros
 	Trollkiller</SPAN></P>
 	<P><A NAME="Overview"></A><STRONG><SPAN LANG="en">Version
-	1</SPAN></STRONG><SPAN LANG="en"><BR></SPAN><STRONG><SPAN LANG="en">Languages:</SPAN></STRONG><SPAN LANG="en">
+	1.0.0</SPAN></STRONG><SPAN LANG="en"><BR></SPAN><STRONG><SPAN LANG="en">Languages:</SPAN></STRONG><SPAN LANG="en">
 	English</SPAN></P>
 	<P LANG="en">Overview</P>
 	<P LANG="en">The Warden is a kit for the ranger class that focuses
