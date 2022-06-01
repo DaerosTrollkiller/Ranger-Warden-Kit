@@ -1,6 +1,5 @@
 # Ranger-Warden-Kit
 A mod for the enhanced editions of BG1, BG2, and IWD that adds a new kit for the ranger class
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 <HEAD>
 	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
