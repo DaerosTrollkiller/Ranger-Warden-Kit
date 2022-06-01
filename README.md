@@ -4,7 +4,7 @@
 	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
 	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.11  (Win32)">
 	<META NAME="CREATED" CONTENT="0;0">
-	<META NAME="CHANGEDBY" CONTENT="Derrick Kloski">
+	<META NAME="CHANGEDBY" CONTENT="Daeros Trollkiller">
 	<META NAME="CHANGED" CONTENT="20220601;10431322">
 	<META NAME="Originator" CONTENT="Microsoft Word 15">
 	<META NAME="ProgId" CONTENT="Word.Document">
