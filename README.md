@@ -651,7 +651,6 @@
 	mso-pagination:widow-orphan;
 	font-size:10.0pt;
 	font-family:"Times New Roman",serif;}
-</style>
 <![endif]-->
 	<!--[if gte mso 9]><xml>
  <o:shapedefaults v:ext="edit" spidmax="1026"/>
@@ -672,7 +671,7 @@
 		A:link { color: #0000ff }
 		A:visited { color: #800080 }
 	-->
-	</STYLE>
+	
 </HEAD>
 <BODY LANG="en-US" TEXT="#000000" LINK="#0000ff" VLINK="#800080" DIR="LTR">
 <DIV ID="container" DIR="LTR">
