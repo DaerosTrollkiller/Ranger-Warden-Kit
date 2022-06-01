@@ -1,0 +1,42 @@
+/*  
+1 - Forest Stalker's Bramblecoat +4
+2 - Forest Stalker's Bramblecoat +5
+3 - Needler +3 (Recharge)
+*/
+
+
+IF
+  Global("DTKItems","ar0334",1)
+  Global("ForgeStuff","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ForgeStuff","GLOBAL",0)
+    SetGlobal("DTKItems","ar0334",0)
+    SetGlobal("ForgeItem","GLOBAL",999) // route to existing 'here you go' dialogue
+    GiveItemCreate("dtkwdar2",Player1,0,0,0) // Forest Stalker's Bramblecoat +4
+    ActionOverride("wsmith01",StartDialogueNoSet([PC]))
+END
+
+IF
+  Global("DTKItems","ar0334",2)
+  Global("ForgeStuff","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ForgeStuff","GLOBAL",0)
+    SetGlobal("DTKItems","ar0334",0)
+    SetGlobal("ForgeItem","GLOBAL",999) // route to existing 'here you go' dialogue
+    GiveItemCreate("dtkwdar3",Player1,0,0,0) // Forest Stalker's Bramblecoat +4
+    ActionOverride("wsmith01",StartDialogueNoSet([PC]))
+END
+
+IF
+  Global("DTKItems","ar0334",3)
+  Global("ForgeStuff","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ForgeStuff","GLOBAL",0)
+    SetGlobal("DTKItems","ar0334",0)
+    SetGlobal("ForgeItem","GLOBAL",999) // route to existing 'here you go' dialogue
+    GiveItemCreate("dtkwdxb1",Player1,80,0,0) // Needler +3 (Recharged)
+    ActionOverride("wsmith01",StartDialogueNoSet([PC]))
+END

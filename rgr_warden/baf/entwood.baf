@@ -1,0 +1,22 @@
+IF
+	PartyHasItem("dtkbark")
+	Global("DTKentwoodrot","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DTKentwoodrot","GLOBAL",1)
+		SetGlobalTimer("DTK_ENT_ROT","GLOBAL",FIVE_DAYS)
+END
+
+
+IF
+	PartyHasItem("dtkbark")
+	Global("DTKentwoodrot","GLOBAL",1)
+	GlobalTimerExpired("DTK_ENT_ROT","GLOBAL")
+THEN
+	RESPONSE #100
+		TakePartyItemNum("dtkbark",1)
+		DestroyItem("dtkbark")
+		GiveItemCreate("dtkdbark",Player1,0,0,0)
+		DisplayStringHead(Player1,@6015)
+		SetGlobal("DTKentwoodrot","GLOBAL",0)
+END

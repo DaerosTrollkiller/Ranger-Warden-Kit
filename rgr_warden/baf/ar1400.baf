@@ -1,0 +1,12 @@
+IF
+Global("DTKSPawnCre","AR1400",0)
+THEN
+RESPONSE #100
+SetGlobal("DTKSPawnCre","AR1400",1)
+CreateCreature("dtkeant1",[4147.2308],NW)
+CreateCreature("bdtreant",[4119.2358],NW)
+CreateCreature("bdtreant",[4317.2322],W)
+CreateCreature("bdtreant",[4249.2309],SW)
+CreateCreature("dtksdcre",[4183.2374],S)
+Continue()
+END

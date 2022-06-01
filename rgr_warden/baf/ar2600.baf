@@ -1,0 +1,8 @@
+IF
+Global("DTKSpawnItem","AR2600",0)
+THEN
+RESPONSE #100
+SetGlobal("DTKSpawnItem","AR2600",1)
+ActionOverride("Container 1",CreateItem("dtkamfg",0,0,0))	 //Amber of First Growth
+Continue()
+END

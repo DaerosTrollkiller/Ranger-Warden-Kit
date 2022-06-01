@@ -1,0 +1,8 @@
+IF
+Global("DTKSpawnItem","AR0708",0)
+THEN
+RESPONSE #100
+SetGlobal("DTKSpawnItem","AR0708",1)
+ActionOverride("Crate 1",CreateItem("dtkwdnar",0,0,0))	 //Forest Stalker's Bramblecoat +3
+Continue()
+END

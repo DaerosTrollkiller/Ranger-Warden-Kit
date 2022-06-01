@@ -1,0 +1,8 @@
+IF
+Global("DTKSpawnItem","BD7210",0)
+THEN
+RESPONSE #100
+SetGlobal("DTKSpawnItem","BD7210",1)
+ActionOverride("Corpse",CreateItem("dtkwdxb1",57,0,0))	 // Needler +3
+Continue()
+END

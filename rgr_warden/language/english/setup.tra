@@ -1,0 +1,496 @@
+//////////////////////////////////////////////////
+///////	      Setup Strings        ///////////////
+//////////////////////////////////////////////////
+@1000 = ~Ranger Warden Kit~
+@1001 = ~Ehanced Edition is required to install this mod~
+@1002 = ~ModMerge must be installed prior to installing this to a Siege of Dragonspear game.~
+@1003 = ~Invalid Class/Statistics/Alignment Combination~
+@1004 = ~Cleaning up 2DAs~
+
+//////////////////////////////////////////////////
+///////	      Kit Strings          ///////////////
+//////////////////////////////////////////////////
+@2000 = ~Warden~
+@2001 = ~WARDEN: Wardens serve to protect nature from the ravages of civilization, and usually prefer to keep away from large cities and the like.  However, a warden would have no reservations in tracking down a poacher to even those most crowded of places to bring them to justice, whether such action is lawfully warranted or not.  A Warden's first and only true loyalty is to the natural world which they seek to protect, with little or no consideration given to the laws of the civilized world.  Wardens are quite resourceful and use their knowledge of the natural world to stymie the encroachment of "civilized" races into the wild.
+
+Advantages:
+– May create special fieldcraft ammunition starting at level 1.
+– May create poultices starting at level 1.
+– May achieve Mastery (3 slots) in slashing, piercing, and missile weapons.
+– Starts with 10 points in Set Traps, and gains 7 points per level through level 15.
+– Has access to unique traps starting at level 4.
+– May dual-class to Druid.
+
+Disadvantages:
+– May not use the Charm Animal ability.
+– May only wear leather, studded leather, and hide armor.
+– May only become Proficient (1 slot) in crushing weapons. 
+– Suffers a -4 penalty to Charisma.
+– May not be of any Lawful alignment.
+– May not dual-class to Cleric.
+– -2 penalty to caster level.~
+
+@2002 = ~Lost Class: Warden~
+@2003 = ~The Warden is an example of the consummate woodsman, a lone wolf, so to speak.  Highly resourceful and self-reliant, Wardens are at home in places far from civilization, and have a general disdain for it.  A Warden's first and only loyalty is to the natural world, and protecting it from whom they view as the only true predators, the ones which ambulate on two legs.  As such, Wardens care little for "laws" created by civilization, if they care for them at all.  This doesn't preclude one from doing good, and trying to strike a balance with civilization and nature, nor does it mean that you wouldn't find a Warden working with a cirlce of Shadow Druids for what most would consider nefarious ends.  One should take great care in dealing with a Warden, especially if encountered in the wilds.~
+@2004 = ~A Warden is more adept with slashing, piercing, and missile weapons than a typical ranger, but less adept with crushing weapons.  They can also create special fieldcraft ammunition, healing poultices, and unique traps.  Wardens are not able to wear heavy armor, preferring stealth and mobility.  They also aren't as skilled with magic, casting spells at lower levels than a typical ranger would.  Lastly, due to their preference to live aways from civilization, they tend to be gruff and un-charismatic.~
+//////////////////////////////////////////////////
+///////	    Spell/Ability Strings  ///////////////
+//////////////////////////////////////////////////
+@3000 = ~Create Fieldcraft Ammunition~
+@3001 = ~This ability allows the warden to create special ammunition using <PRO_HISHER> knowledge of the natural world.  <PRO_HESHE> is able to create this ammunition in greater quantities as <PRO_HESHE> gains in experience.  Few other than a skilled woodsman would be able to use this ammunition effectively, however.  Furthermore, the compounds used in creating this ammunition, while effective, are also unstable, and if not used within 2 days, will be rendered useless.
+
+  1st Level: Creates 2 Arrows/Bolts/Bullets.
+  3rd Level: Creates 4 Arrows/Bolts/Bullets.
+  6th Level: Creates 6 Arrows/Bolts/Bullets.
+  10th Level: Creates 8 Arrows/Bolts/Bullets.
+  15th Level: Creates 10 Arrows/Bolts/Bullets.~
+@3002 = ~Create Fieldcraft Arrows~
+@3003 = ~Create Fieldcraft Bolts~
+@3004 = ~Create	Fieldcraft Bullets~
+@3005 = ~Set Electrocution Trap~
+@3006 = ~Electrocution Trap
+
+This clever trap makes use of bio-chemical electrical energy, stored carefully within a fragile makeshift battery of sorts.  When the trap is triggered, the battery explodes, sending electrical currents arcing outward in all directions, striking creatures within a 10-ft radius.
+
+  3rd Level: Deals 1d2 electrical damage and stuns the target for 3 rounds if a Save vs. Spell is failed.
+  8th Level: Deals 1d4 electrical damage and stuns the target for 3 rounds if a Save vs. Spell with a -2 penalty is failed.
+  13th Level: Deals 1d8 electrical damage and stuns the target for 3 rounds if a Save vs. Spell with a -4 penalty is failed.
+  18th Level: Deals 1d12 electrical damage and stuns the target for 3 rounds if a Save vs. Spell with a -6 penalty is failed.
+  23rd Level: Deals 1d16 electrical damage and stuns the target for 3 rounds if a Save vs. Spell with a -8 penalty is failed.
+  28th Level: Deals 1d20 electrical damage and stuns the target for 3 rounds if a Save vs. Spell with a -10 penalty is failed.~
+@3007 = ~Create Fieldcraft Poultice~  
+@3008 = ~With this ability, the warden uses <PRO_HISHER> knowledge of the natural world to create a poultice that will help in healing wounds and drawing out toxins.  As <PRO_HESHE> gains in level, the efficacy of the poultice created improves.
+
+  1st Level: Heals 8 Hit Points, cures poison and disease.
+  7th Level: Heals 22 Hit Points, cures poison and disease.
+  15th Level: Heals 31 Hit Points, cures poison and disease.~
+@3009 = ~Set Burning Web Trap~
+@3010 = ~Burning Web Trap
+
+This devious trap is constructed of sticky web extracts from giant spiders soaked in a highly flammable liquid.  When triggered, it explodes, covering creatures in a 12-ft radius.
+
+  7th Level: Deals 1d3 fire damage and slows the target, doing an additional 1 point of fire damage per round for 1 turn if a Save vs. Spell with a -2 penalty is failed.
+  12th Level: Deals 2d3 fire damage and slows the target, doing an additional 1 point of fire damage per round for 1 turn if a Save vs. Spell with a -4 penalty is failed.
+  17th Level: Deals 2d3 fire damage and slows the target, doing an additional 2 points of fire damage per round for 1 turn if a Save vs. Spell with a -6 penalty is failed.
+  22nd Level: Deals 3d3 fire damage and slows the target, doing an additional 2 points of fire damage per round for 1 turn if a Save vs. Spell with a -8 penalty is failed.
+  27th Level: Deals 3d3 fire damage and slows the target, doing an additional 3 points of fire damage per round for 1 turn if a Save vs. Spell with a -10 penalty is failed.~
+@3011 = ~Set Parasitic Fungus Trap~
+@3012 = ~Parasitic Fungus Trap
+
+When triggered, this heinous trap will release a cloud of parasitic fungal spores into a 15-ft radius surrounding the trap.  These spores quickly infect and spread into affected creatures causing disease and psychological effects unless a successful Save vs Spell is made.  The infection can spread to other creatures within a 10-ft radius, but cannot re-infect creatures already suffering from its effects.
+
+  10th Level: Deals 4d6 magic damage, then 3d6 magic damage the second round, 2d6 magic damage the third round, 1d6 magic damage the fourth round, and causes confusion for the duration if a Save vs. Spell with a -4 penalty is failed.  If successful, damage is reduced to 2d6, 1d6, and 1d6 respecively, and confusion is negated.
+  15th Level: Deals 4d6 magic damage, then 3d6 magic damage the second round, 2d6 magic damage the third round, 1d6 magic damage the fourth round, and causes confusion for the duration if a Save vs. Spell with a -6 penalty is failed.  If successful, damage is reduced to 2d6, 1d6, and 1d6 respecively, and confusion is negated.
+  20th Level: Deals 4d6 magic damage, then 3d6 magic damage the second round, 2d6 magic damage the third round, 1d6 magic damage the fourth round, and causes confusion for the duration if a Save vs. Spell with a -8 penalty is failed.  If successful, damage is reduced to 2d6, 1d6, and 1d6 respecively, and confusion is negated.
+  25th Level: Deals 4d6 magic damage, then 3d6 magic damage the second round, 2d6 magic damage the third round, 1d6 magic damage the fourth round, and causes confusion for the duration if a Save vs. Spell with a -10 penalty is failed.  If successful, damage is reduced to 2d6, 1d6, and 1d6 respecively, and confusion is negated.
+  30th Level: Deals 4d6 magic damage, then 3d6 magic damage the second round, 2d6 magic damage the third round, 1d6 magic damage the fourth round, and causes confusion for the duration if a Save vs. Spell with a -12 penalty is failed.  If successful, damage is reduced to 2d6, 1d6, and 1d6 respecively, and confusion is negated.~
+@3013 = ~Bark Dervish~
+@3014 = ~Bark Dervish
+(Evocation)
+
+Level: 3
+Sphere: Guardian, Plant 
+Range: Touch 
+Duration: 1 turn
+Casting Time: 7 
+Area of Effect: Special
+Saving Throw: Special
+
+When cast, this spell summons for a whirling dervish of tree boughs, sticks, and splintered hunks of wood that surround the caster, creating a protective barrier.  Creatures that attempt to close in on the caster are battered for 4d8 crushing damage or 4d8 piercing damage per round by the dervish until they move out of range, or the spell expires.~
+//////////////////////////////////////////////////
+///////	      Effect Strings       ///////////////
+//////////////////////////////////////////////////
+@4000 = ~Paralyzed~
+@4001 = ~Snare—here~
+@4002 = ~Stunned~
+@4003 = ~Disorienting Flash~
+@4004 = ~Sedating Gas~
+@4005 = ~Bark Skin~
+@4006 = ~Stun~
+@4007 = ~Poison~
+@4008 = ~Poisoned~
+@4009 = ~Held~
+@4010 = ~Sleep~
+@4011 = ~Morale Failure: Panic~
+@4012 = ~Panic~
+@4013 = ~Rigid Thinking~
+@4014 = ~Confused~
+@4015 = ~Regenerating~
+//////////////////////////////////////////////////
+///////	      Item Strings         ///////////////
+//////////////////////////////////////////////////
+@5000 = ~Fieldcraft Arrow~
+@5001 = ~Arrow of Disorientation~
+@5002 = ~This arrow, carefully crafted by skilled hands, flies straight and true to it's intended target, and likely has special properties.
+
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0~
+@5003 = ~The tip of this arrow is packed with an explosive compound that produces a tremendously bright flash and deafening blast of sound upon impact, disorienting any creature within a 12-ft radius.  Creatures without eyes or ears, such undead, extraplanar beings, and constructs are unaffected by this, but may still take a small amount of damage from shrapnel.
+
+STATISTICS:
+
+Damage: 1d2 points(missile) to all creatures in area of effect, blinds and deafens for 1 turn (Save vs. Spell at -4 negates)
+Damage type: Missile
+Launcher: Bow
+
+Weight: 0~
+@5004 = ~Fieldcraft Bolt~
+@5005 = ~Bolt of Disorientation~
+@5006 = ~This bolt, carefully crafted by skilled hands, flies straight and true to it's intended target, and likely has special properties.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0~
+@5007 = ~The tip of this bolt is packed with an explosive compound that produces a tremendously bright flash and deafening blast of sound upon impact, disorienting any creature within a 12-ft radius.  Creatures without eyes or ears, such undead, extraplanar beings, and contructs are unaffected by this, but may still take a small amount of damage from shrapnel.
+
+STATISTICS:
+
+Damage: 1d2 points(missile) to all creatures in area of effect, blinds and deafens for 1 turn (Save vs. Spell at -4 negates)
+Damage type: Missile
+Launcher: Crossbow
+
+Weight: 0~
+@5008 = ~Fieldcraft Bullet~
+@5009 = ~Bullet of Disorientation~
+@5010 = ~This bullet, carefully crafted by skilled hands, flies straight and true to it's intended target, and likely has special properties.
+
+STATISTICS:
+
+Damage: 1d4+1 (missile)
+Launcher: Sling
+
+Weight: 0~
+@5011 = ~The interior of this bullet is packed with an explosive compound that produces a tremendously bright flash and deafening blast of sound upon impact, disorienting any creature within a 12-ft radius.  Creatures without eyes or ears, such undead, extraplanar beings, and contructs are unaffected by this, but may still take a small amount of damage from shrapnel.
+
+STATISTICS:
+
+Damage: 1d2 points(missile) to all creatures in area of effect, blinds and deafens for 1 turn (Save vs. Spell at -4 negates)
+Damage type: Missile
+Launcher: Sling
+
+Weight: 0~
+@5012 = ~Arrow of Slumber~
+@5013 = ~The tip of this arrow is packed with a reactive compound that produces a gaseous expulsion of a powerful sedative upon impact, affecting creatures within a 10-ft radius.  Affected creatures must roll a Save vs Death, or fall unconscious for 4 rounds.  Creatures that save remain conscious, but are left in a state of torpor for 4 rounds until the sedative wears off.  Creatures that do not breathe, such undead, extraplanar beings, and constructs are unaffected, but may still take a small amount of damage from shrapnel.
+
+STATISTICS:
+
+Damage: 1d2 points(missile) to all creatures in area of effect, incapacitated for 4 rounds (Save vs. Death at -4 negates)
+Special: Intoxicated and Fatigued for 4 rounds (No Save)
+Damage type: Missile
+Launcher: Bow
+
+Weight: 0~
+@5014 = ~Bolt of Slumber~
+@5015 = ~The tip of this bolt is packed with a reactive compound that produces a gaseous expulsion of a powerful sedative upon impact, affecting creatures within a 10-ft radius.  Affected creatures must roll a Save vs Death, or fall unconscious for 4 rounds.  Creatures that save remain conscious, but are left in a state of torpor for 4 rounds until the sedative wears off.  Creatures that do not breathe, such undead, extraplanar beings, and constructs are unaffected, but may still take a small amount of damage from shrapnel.
+
+STATISTICS:
+
+Damage: 1d2 points(missile) to all creatures in area of effect, incapacitated for 4 rounds (Save vs. Death at -4 negates)
+Special: Intoxicated and Fatigued for 4 rounds (No Save)
+Damage type: Missile
+Launcher: Crossbow
+
+Weight: 0~
+@5016 = ~Bullet of Slumber~
+@5017 = ~The interior of this bullet is packed with a reactive compound that produces a gaseous expulsion of a powerful sedative upon impact, affecting creatures within a 10-ft radius.  Affected creatures must roll a Save vs Death, or fall unconscious for 4 rounds.  Creatures that save remain conscious, but are left in a state of torpor for 4 rounds until the sedative wears off.  Creatures that do not breathe, such undead, extraplanar beings, and constructs are unaffected, but may still take a small amount of damage from shrapnel.
+
+STATISTICS:
+
+Damage: 1d2 points(missile) to all creatures in area of effect, incapacitated for 4 rounds (Save vs. Death at -4 negates)
+Special: Intoxicated and Fatigued for 4 rounds (No Save)
+Damage type: Missile
+Launcher: Sling
+
+Weight: 0~
+@5018 = ~Poultice~
+@5019 = ~Detoxifying Poultice~
+@5020 = ~A poultice is similar to a bandage that has been packed with herbs and the like to aid in healing wounds and drawing out toxins.
+
+STATISTICS:
+
+Weight: 1~
+
+@5021 = ~This poultice has been crafted using herbs with medicinal properties.  When applied to a wound, it will heal damage quickly, and can also treat poisons and other afflictions.  It must be used within 3 days, before the herbs begin to rot.
+
+STATISTICS:
+
+Special: Cures poison and disease and heals 8 Hit Points
+
+Weight: 1~
+@5022 = ~Major Detoxifying Poultice~
+@5023 = ~This poultice has been crafted using strong herbs with medicinal properties.  When applied to a wound, it will heal damage quickly, and can also treat poisons and other afflictions.  It must be used within 3 days, before the herbs begin to rot.
+
+STATISTICS:
+
+Special: Cures poison and disease and heals 22 Hit Points
+
+Weight: 1~
+@5024 = ~Superior Detoxifying Poultice~
+@5025 = ~This poultice has been crafted using powerful herbs with medicinal properties.  When applied to a wound, it will heal damage quickly, and can also treat poisons and other afflictions.  It must be used within 3 days, before the herbs begin to rot.
+
+STATISTICS:
+
+Special: Cures poison and disease and heals 31 Hit Points
+
+Weight: 1~
+@5026 = ~Gauntlets~
+@5027 = ~Trapper's Gauntlets~
+@5028 = ~Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2~
+
+@5029 = ~Silas Slipfoot, a halfling thief hailing from Waterdeep, discovered these gauntlets while spelunking in the city's sewers, attempting to track down a mark.  Silas was able to put them to great use during his career and became the most prolific thief in his guild for a time.  One day, overconfident from all his success, he forgot to put them on before attempting to set an extremely complex and deadly trap, which he himself fell victim to. 
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +1
+– Dexterity: +1
+– Set Traps: +15%
+
+Weight: 2~
+@5030 = ~Studded Leather Armor~
+@5031 = ~Forest Stalker's Bramblecoat +3~
+@5032 = ~Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 25~
+@5033 = ~This deep green suit of armor was created by the archdruid Arundel of Kuldahar, and is unique in it's construction.  Instead of leathers or hides from creatures, the armor is made from cured strips of bark from Kuldahar's Great Oak, bound together with enchanted vines and adorned with petrified acorn from the ancient tree as studs.  When the wearer is struck in combat, there is a chance that the latent enchantments in the armor will activate, imbuing <PRO_HIMHER> with a natural boon of protection or regeneration.  The armor would not save Arundel for the treachery that befell him, however, and the passage of time and many battles has taken it's toll.  In the right hands, the armor may be able to be restored to it's former strength.
+
+STATISTICS:
+
+Combat abilities:
+– 11% chance of Barkskin on the wearer when hit by creatures within 6-ft.
+– 11% chance of Bark Dervish on the wearer when hit by creatures within 6-ft.
+– 11% chance of Regeneration on the wearer when hit by creatures within 6-ft.
+
+Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 15~
+@5034 = ~Forest Stalker's Bramblecoat +5~	//IWDEE version
+@5035 = ~This deep green suit of armor was created by the archdruid Arundel of Kuldahar, and is unique in it's construction.  Instead of leathers or hides from creatures, the armor is made from cured strips of bark from Kuldahar's Great Oak, bound together with enchanted vines and adorned with petrified acorn from the ancient tree as studs.  When the wearer is struck in combat, there is a chance that the latent enchantments in the armor will activate, imbuing <PRO_HIMHER> with a natural boon of protection or regeneration.  Unfortunately, despite all it's enchantments, the armor could not save Arundel from the treachery that befell him.
+
+STATISTICS:
+
+Combat abilities:
+– 23% chance of Barkskin on the wearer when hit by creatures within 6-ft.
+– 23% chance of Bark Dervish on the wearer when hit by creatures within 6-ft.
+– 23% chance of Regeneration on the wearer when hit by creatures within 6-ft.
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 15~
+@5036 = ~Club~
+@5037 = ~Darkwood Thrasher +3~
+@5038 = ~Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@5039 = ~This hefty club has been fashioned from the tough limb of a dark treant.  The enchantments placed upon it have kept it alive in the sense that it can anticipate incoming attacks and fend them off.  Unfortunately, this enchantment also prevents those not attuned to the natural world from using it.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+
+THAC0: +3 
+Damage: 1d6+3 (crushing) 
+Speed Factor: 3 
+Proficiency Type: Club 
+Type: One-handed 
+Requires: 
+5 Strength
+
+Weight: 3~
+@5040 = ~Forest Stalker's Bramblecoat +4~
+@5041 = ~Enchanted strips of living entwood have been intricately woven into the Forest Stalker's Bramblecoat, partially restoring it's former defensive power.  The latent enchantments have a greater chance of activating when the wearer is struck, and at a greater strength. 
+
+STATISTICS:
+
+Combat abilities:
+– 17% chance of Barkskin on the wearer when hit by creatures within 6-ft.
+– 17% chance of Bark Dervish on the wearer when hit by creatures within 6-ft.
+– 17% chance of Regeneration on the wearer when hit by creatures within 6-ft.
+
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 15~
+@5042 = ~Forest Stalker's Bramblecoat +5~	//BG2EE, EET version
+@5043 = ~The Amber of First Growth has fully revived Arundel's armor, restoring it to full strength.  It is truly a wonder of creation and ingenuity.
+
+STATISTICS:
+
+Combat abilities:
+– 23% chance of Barkskin on the wearer when hit by creatures within 6-ft.
+– 23% chance of Bark Dervish on the wearer when hit by creatures within 6-ft.
+– 23% chance of Regeneration on the wearer when hit by creatures within 6-ft.
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 15~
+@5044 = ~Plank of Wood~
+@5045 = ~Bough of Entwood~
+@5046 = ~Wood is a resource used in many crafts throughout the realms.  This is a plank harvested from a recently felled tree.
+
+STATISTICS:
+
+Weight: 25~
+@5047 = ~This plank of wood was harvested from an Ent, and still shows signs of life when inspected closely.  The sap slowly flowing out of the freshly felled wood flouresces like fireflies when viewed in dim areas.  A skilled craftsman may be able to make good use of this resource, though you aren't sure how.
+
+STATISTICS:
+
+Weight: 25~
+@5048 = ~Strange Gemstone~
+@5049 = ~Amber of First Growth~
+@5050 = ~This oddly glowing gemstone seems alive in the hand.  It is unlike any you have ever encountered.  Divination may reveal more about it's nature.
+
+STATISTICS:
+
+Weight: 1~
+@5051 = ~This glowing amber stone harkens back to ancient Toril, long before civilization, when gigantic trees covered the land.  The stone is made from the very sap of those trees, petrified and shaped by the passage of aeons.  These gems are exceedingly rare, and are highly coveted by druids for their regenerative powers.  It is said that a single one of these stones, when used with the proper rituals, can transform even the most arid, barren, lifeless landscape into a full, lush forest in a matter of days.
+
+STATISTICS:
+
+Weight: 1~
+@5052 = ~Dessicated Entwood~
+@5053 = ~The plank of entwood has fully dried out and no longer shows any signs of life.  It appears much as any other piece of lumber.
+
+STATISTICS:
+
+Weight: 25~
+@5054 = ~Light Crossbow~
+@5055 = ~Needler +3~
+@5056 = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5~
+@5057 = ~Dravith the Kinslain, a brilliant inventor and devout follower of Gond, was a man of very meager upbringing.  He spent his entire adult life creating and perfecting this unique crossbow design in hopes of gaining favor with his god and improving the lot of he and his kin in life.  On the day of revelation of the finished product, Dravith held a gathering and a feast for the unveiling and a demonstration of the bow striking several targets at once in rapid succession.  Unfortunately, Dravith's kin were not the brightest folk, and the amount of ale consumed during the evening didn't help matters when a fight broke out over whose turn it was to try out the new bowgun.  In the ensuing struggle, a hail of bolts flew in all directions, wounding many, and fatally striking Dravith.  With it's inventor now dead, this would be the only crossbow of it's kind ever made.  While it can fire any normal crossbow bolts in standard fashion, it requires special ammunition to use it's multi-bolt functionality.  Once exhausted, it would be difficult, if not impossible to replace.
+
+STATISTICS:
+
+Combat abilities:
+– No attack per round penalty
+
+Charge abilities:
+– Fires special bolts in a 30-ft. cone, striking multiple targets for 1d3+3 missile damage
+
+THAC0: +3
+Damage: +3 (missile)
+Speed Factor: 1
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5~
+@5058 = ~The special ammunition of the Needler +3 has been exhausted, negating it's ability to fire shots at multiple targets, but it still functions as a very competent crossbow.
+
+STATISTICS:
+
+Combat abilities:
+– No attack per round penalty
+
+THAC0: +3
+Damage: +3 (missile)
+Speed Factor: 1
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5~
+//////////////////////////////////////////////////
+///////	      Journal/Dialogue Strings     ///////
+//////////////////////////////////////////////////
+@6000 = ~Ghostly Knights in Firewine
+The ghostly knights were pleased to have the ancient suit of armor. From what they said, I suspect they are free at last from an age-old curse.  One of the ghosts dropped an interesting pair of gauntlets as it faded away, perhaps I will be able to put them to good use.~
+@6001 = ~You shall not desecrate this place further with your filth!  Ents, cleanse these lands from the presence of these interlopers!~
+@6002 = ~*attempts to hide in shadows*~
+@6003 = ~*quaffs a potion*~
+@6004 = ~*uses an oil flask*~
+@6005 = ~What's this now?  Bless me britches, if'n I'm not mistaken this be... yes it most certainly must be the armor of Arundel himself, afore the Time 'o Troubles.  Much history be behind this piece, the wear and tear says as much.~
+@6006 = ~Can the armor be fixed ye say?  Nothing be irreparable me friend, given the proper materials.  Would simply take some wood from an ent, though getting that in an of itself may not be so simple, eh?  The wood must be still have some life in it, mind ye.  I cannae do anything with it otherwise.~
+@6007 = ~This be the entwood we spoke of, but ye waited too long to bring it to me shop.  I cannae do anything with it in this state.  If ye find some more, bring it to me in a more harried fashion, aye?  All it's good for now is firewood.~
+@6008 = ~*tosses the dessicated entwood into the forge*~
+@6009 = ~A nice plank of entwood ye've got here, plenty of life left in it.  I require a simple 5,000 pieces of gold for my time, and a day's worth of yers to reforge the armor.~
+@6010 = ~If'n ye change yer mind, ye know where tae find me.~
+@6011 = ~Anything else of interest ye want me to look at?~
+@6012 = ~Perhaps another time, do I have anything else you can work with?~
+@6013 = ~Very well, let's see what else ye've got in yer packs then...~
+@6014 = ~You may as well go ahead and burn it then.  I will try to find more.~
+@6015 = ~*The plank of entwood you were carrying has fully dried out*~
+@6016 = ~The Forest Stalker's Bramblecoat?  A way to restore it fully ye ask?~
+@6017 = ~I be no druid, friend, but I believe I can fully restore Arundel's armor with a specific artifact, an Amber of First Growth.  I've no idea where ye could find one, mind ye, but if'n ye do, bring it to the forge and I will use it to reforge yer armor.~
+@6018 = ~An Amber of First Growth... what a sight to behold.  This will most certainly work to bring the Forest Stalker's Bramblecoat back to full strength.  It will cost ye 8,000 gold and a day's work.~
+@6019 = ~Let's take a look through the rest of yer goods then.~
+@6020 = ~Hmmm, armor made from wood?  Smells strangely familliar...~
+@6021 = ~Cespenar has recipe for wood armor.  Simple, needs more wood, but good wood, live, from ents.  Oh! Almost forgots, needs 5,000 golds too.~
+@6022 = ~You has wood here?  Nope, no goods, all dried out, maybe good for toothpicks.  Cespenar can have?~
+@6023 = ~You has wood here?  Still green, so wood is good.  Want for I to remake armor with?~
+@6024 = ~Okay then, you has more for me to look at?~
+@6025 = ~All yours, imp, be my guest.~
+@6026 = ~Foresty Stalky armor?  Cespenar has just ooooonnnnnneeee recipe for, but is good recipe!~
+@6027 = ~Recipe calls for realllly old gem from realllly old trees, Amber of First Growth.  Finds one, brings it, and 8,000 shinies and I makes armor for the master.~
+@6028 = ~You has sparkly amber from old times, Cespenar can use to fix up wood armor.  Does you wants?~
+@6029 = ~Oh, alright then, what else in packs?~
+@6030 = ~This is a rather unique find ye have here friend, I've not seen anything like it.~
+@6031 = ~Ye would like more of the original bolts made for it, ye say?  Be meticulous work fer sure, but I can do it.  My comission would be 10,000 gold, ye interested?~
+@6032 = ~Ooooh! Neat crossbow, shoots lots of bolts fast!~
+@6033 = ~Master wants more bolts made for special function of crossbow?  Suuuure, Cespenar can make for you, recipe calls for 10,000 shinies.  You wants?~
+@6034 = ~I found this unique crossbow that uses special bolts, do you think you can make more of them for me?~
+@6035 = ~This is quite the find you have here, I've never seen anything like it.  Seems like Gond himself had a hand in this one.~
+@6036 = ~The inner workings of this bow are far too complex for someone such as I to re-create, but I believe I can work out some replacements for the bolts.~
+@6037 = ~What would it take to make them?~
+@6038 = ~For something this meticulous and complicated, it would normally take a week or more, but, for you I believe I can finish them in four days.  I'd need 5,000 gold for my comission to do the work.~
+@6039 = ~That's a deal, let's do it.~
+@6040 = ~Could you tell me what was involved with making more bolts for the Needler again?~
+@6041 = ~Very well.  Come back in four days and I'll have it ready for you.~
+@6042 = ~Just in time!  I've just completed fitting the new bolts into the Needler.~
+@6043 = ~Here you go, best of luck in your travels and be careful where you point this thing.~
+//////////////////////////////////////////////////
+///////	      Creature Strings     ///////////////
+//////////////////////////////////////////////////
+@7000 = ~Crazed Shadow Druid~
+@7001 = ~Dark Treant~
+//////////////////////////////////////////////////
+///////	      Creature Item Strings //////////////
+//////////////////////////////////////////////////
+@8000 = ~Ring~
+@8001 = ~Attack~

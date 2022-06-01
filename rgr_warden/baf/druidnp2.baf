@@ -1,0 +1,12 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("prep","LOCALS",1)
+	Global("DTKDRUBF","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,CLERIC_BARKSKIN)
+		ApplySpell(Myself,CLERIC_BARK_DERVISH)  //
+		SetGlobal("DTKDRUBF","LOCALS",1)
+END
+
+
