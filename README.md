@@ -1,8 +1,8 @@
-# Ranger-Warden-Kit
-A mod for the enhanced editions of BG1, BG2, and IWD that adds a new kit for the ranger class
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 <HEAD>
 	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>Geomantic Sorcerer Kit</TITLE>
 	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.11  (Win32)">
 	<META NAME="CREATED" CONTENT="0;0">
 	<META NAME="CHANGEDBY" CONTENT="Derrick Kloski">
