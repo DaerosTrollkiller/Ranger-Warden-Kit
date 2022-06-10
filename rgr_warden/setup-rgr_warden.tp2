@@ -1,7 +1,7 @@
 BACKUP   ~rgr_warden/backup~    // location to store files for uninstall purposes
-SUPPORT  ~.~ // email address displayed if install fails
+SUPPORT  ~https://forums.beamdog.com/discussion/84124/mod-ranger-warden-kit#latest~ // email address displayed if install fails
 README ~rgr_warden/readme-rgr_warden.html~ // Offer to display the main readme
-VERSION ~v1.0.0~
+VERSION ~v1.0.1~
 
 LANGUAGE ~English~
          ~english~
@@ -296,18 +296,89 @@ ACTION_IF !FILE_CONTAINS_EVALUATED(~spell.ids~ ~CLERIC_BARK_DERVISH~) BEGIN
 
 COPY ~rgr_warden/spl/dtkbrdv1.spl~	~override~
 
-	//LAF dtk_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@3013) STR_VAR bam_file = dtkbrdvp RET icon END
+	LAF dtk_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@3013) STR_VAR bam_file = dtkbrdvp RET icon END
 	ADD_SPELL ~rgr_warden/spl/dtkbrdv.spl~ 1 3 CLERIC_BARK_DERVISH
 		SPRINT current_spell_res "%DEST_RES%"
 		SAY NAME1 @3013  // Spell Name
 		SAY UNIDENTIFIED_DESC @3014  // Spell description
 		LPF ALTER_EFFECT INT_VAR match_opcode = 321 STR_VAR resource = EVAL ~%current_spell_res%~ END
+		LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = icon END
 		
 			COPY ~rgr_warden/spl/dtkbrdv.spl~	~override~	//modified version for bramblecoat armor effect
 			SAY NAME1 @3013  // Spell Name
 			SAY UNIDENTIFIED_DESC @3014  // Spell description
 			WRITE_BYTE 0x22 0	//removes casting animation
 			LPF ALTER_EFFECT INT_VAR match_opcode = 321 STR_VAR resource = dtkbrdv END
+			LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = icon END
+			
+			///adding spell to joinable Druid NPCs if present
+			
+				ACTION_IF FILE_EXISTS_IN_GAME ~jaheir7.cre~ BEGIN	//Jaheira
+					COPY_EXISTING ~jaheir7.cre~	~override~
+					  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+					  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+					  BUT_ONLY
+					  END
+				ACTION_IF FILE_EXISTS_IN_GAME ~jaheir8.cre~ BEGIN	//Jaheira
+					COPY_EXISTING ~jaheir8.cre~	~override~
+					  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+					  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+					  BUT_ONLY
+					  END
+				ACTION_IF FILE_EXISTS_IN_GAME ~jaheir11.cre~ BEGIN	//Jaheira
+					COPY_EXISTING ~jaheir11.cre~	~override~
+					  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+					  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+					  BUT_ONLY
+					  END
+				ACTION_IF FILE_EXISTS_IN_GAME ~jaheir12.cre~ BEGIN	//Jaheira
+					COPY_EXISTING ~jaheir12.cre~	~override~
+					  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+					  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+					  BUT_ONLY
+					  END
+				ACTION_IF FILE_EXISTS_IN_GAME ~jahei14.cre~ BEGIN	//Jaheira
+					COPY_EXISTING ~jahei14.cre~	~override~
+					  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+					  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+					  BUT_ONLY
+					  END
+					ACTION_IF FILE_EXISTS_IN_GAME ~cernd10.cre~ BEGIN	//Cernd
+						COPY_EXISTING ~cernd10.cre~	~override~
+						  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+						  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+						  BUT_ONLY
+						  END
+					ACTION_IF FILE_EXISTS_IN_GAME ~cernd12.cre~ BEGIN	//Cernd
+						COPY_EXISTING ~cernd12.cre~	~override~
+						  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+						  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+						  BUT_ONLY
+						  END
+					ACTION_IF FILE_EXISTS_IN_GAME ~cernd13.cre~ BEGIN	//Cernd
+						COPY_EXISTING ~cernd13.cre~	~override~
+						  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+						  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+						  BUT_ONLY
+						  END
+					ACTION_IF FILE_EXISTS_IN_GAME ~cernd13b.cre~ BEGIN	//Cernd
+						COPY_EXISTING ~cernd13b.cre~	~override~
+						  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+						  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+						  BUT_ONLY
+						  END
+					ACTION_IF FILE_EXISTS_IN_GAME ~cernd14.cre~ BEGIN	//Cernd
+						COPY_EXISTING ~cernd14.cre~	~override~
+						  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+						  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+						  BUT_ONLY
+						  END
+						ACTION_IF FILE_EXISTS_IN_GAME ~faldor5.cre~ BEGIN	//Faldorn
+							COPY_EXISTING ~faldor5.cre~	~override~
+							  ADD_KNOWN_SPELL ~%current_spell_res%~ #2 ~priest~ // adds current spell to spellbook
+							  //ADD_MEMORIZED_SPELL ~%current_spell_res%~ #2 ~priest~ ( 1 ) // CRE now has 1 instance of current spell memorized
+							  BUT_ONLY
+							  END
 			
 	END
 	
@@ -356,9 +427,23 @@ COPY ~rgr_warden/itm/dtkwdnbr.itm~	~override~	//Trapper's Gauntlets
 		SAY DESC @5029
 
 		
-	ACTION_IF GAME_IS ~bgee eet~ BEGIN
-		COMPILE ~rgr_warden/dlg/knight01.d~		//BG1/EET adding as quest reward for returning armor to ghosts in firewine dungeon
-	END
+		ACTION_IF GAME_IS ~bgee~ BEGIN	//adding gauntlets as reward for ancient armor quest in firewine dungeon
+			COPY_EXISTING ~knight.dlg~ ~override~
+			DECOMPILE_AND_PATCH	BEGIN
+			REPLACE_TEXTUALLY	~AddexperienceParty(1500)~	~AddexperienceParty(1500) GiveItemCreate("dtkwdnbr",LastTalkedToBy,1,0,0)~
+			END
+			COMPILE ~rgr_warden/dlg/knight01.dlg~	
+		END
+		
+			ACTION_IF GAME_IS ~eet~ BEGIN	//adding gauntlets as reward for ancient armor quest in firewine dungeon
+				ACTION_IF FILE_EXISTS_IN_GAME	~knight_.dlg~	BEGIN
+					COPY_EXISTING ~knight_.dlg~ ~override~
+					DECOMPILE_AND_PATCH	BEGIN
+					REPLACE_TEXTUALLY	~AddexperienceParty(1500)~	~AddexperienceParty(1500) GiveItemCreate("dtkwdnbr",LastTalkedToBy,1,0,0)~
+					END
+					COMPILE ~rgr_warden/dlg/knight01.dlg~
+				END
+			END
 			
 		ACTION_IF GAME_IS ~bg2ee~ BEGIN
 			ACTION_IF FILE_EXISTS_IN_GAME ~ar0305.bcs~ BEGIN	//checks for any existing area script to update (this area doesn't have one by default, doing this helps to future-proof)
@@ -380,27 +465,40 @@ COPY ~rgr_warden/itm/dtkwdnbr.itm~	~override~	//Trapper's Gauntlets
 
 //////////////Forest Stalker's Bramblecoat +3//////////////////
 
-ACTION_IF GAME_IS ~bgee eet~ BEGIN
+ACTION_IF GAME_IS ~bgee bg2ee eet~ BEGIN
 		
 COPY ~rgr_warden/itm/dtkwdar1.itm~	~override~	//Forest Stalker's Bramblecoat +3
 		SAY NAME1 @5030
 		SAY NAME2 @5031
 		SAY UNIDENTIFIED_DESC @5032		
 		SAY DESC @5033
+			COPY ~rgr_warden/spl/dtkwdar3.spl~	~override~	//base spell for armor on hit effect
 			COPY ~rgr_warden/spl/dtkwdar1.spl~	~override~	//Forest Stalker's Bramblecoat on-hit Barkskin effect
-			LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@4005) END
-			COPY ~rgr_warden/spl/dtkwdar4.spl~	~override~	//Forest Stalker's Bramblecoat on-hit Regeneration effect
+				LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@4005) END
+					ACTION_IF NOT FILE_EXISTS_IN_GAME ~alterh.vvc~ BEGIN 
+					COPY ~rgr_warden/resources/vvc/alterh.vvc~ ~override~
+					COPY ~rgr_warden/resources/bam/alterh.bam~ ~override~
+					END
+						ACTION_IF NOT FILE_EXISTS_IN_GAME ~#eff_e04.wav~ BEGIN 
+						COPY ~rgr_warden/resources/wav/#eff_e04.wav~ ~override~
+						END
+							ACTION_IF NOT FILE_EXISTS_IN_GAME ~#eff_p07.wav~ BEGIN 
+							COPY ~rgr_warden/resources/wav/#eff_p07.wav~ ~override~
+							END
+			COPY ~rgr_warden/spl/dtkwdar2.spl~	~override~	//Forest Stalker's Bramblecoat on-hit Regeneration effect
 			LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@4015) END
 END
 
 	ACTION_IF GAME_IS ~bgee~ BEGIN
 		COPY_EXISTING ~amaran.cre~ ~override~	//BG1 - adding to Amarande - Cloakwood Treehouse
 			REPLACE_CRE_ITEM ~dtkwdar1~ #0 #0 #0 ~NONE~ ~ARMOR~		//Forest Stalker's Bramblecoat +3
+			BUT_ONLY
 	END
 	
 		ACTION_IF GAME_IS ~eet~ BEGIN
 			COPY_EXISTING ~amaran.cre~ ~override~	//BG1 - adding to Amarande - Cloakwood Treehouse
 				REPLACE_CRE_ITEM ~dtkwdar1~ #0 #0 #0 ~NONE~ ~ARMOR~		//Forest Stalker's Bramblecoat +3
+				BUT_ONLY
 					COPY_EXISTING ~ar0708.are~	~override~	//Cernd's Former Home
 					WRITE_LONG 0x4b0 BIT0 + BIT3	//locks the crate armor is placed in, sets trap to reset (will fire every time it's opened)
 					WRITE_BYTE 0x4ae 127	//sets skill needed to unlock
@@ -429,12 +527,25 @@ COPY ~rgr_warden/itm/dtkwdar3.itm~	~override~	//Forest Stalker's Bramblecoat +5
 		SAY NAME2 @5034
 		SAY UNIDENTIFIED_DESC @5032		
 		SAY DESC @5035
-			COPY ~rgr_warden/spl/dtkwdar3.spl~	~override~	//Forest Stalker's Bramblecoat on-hit Barkskin effect
+			COPY ~rgr_warden/spl/dtkwdar5.spl~	~override~	//base spell for armor on hit effect
+			COPY ~rgr_warden/spl/dtkwdar1.spl~	~override~	//Forest Stalker's Bramblecoat on-hit Barkskin effect
 			LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@4005) END
-			COPY ~rgr_warden/spl/dtkwdar4.spl~	~override~	//Forest Stalker's Bramblecoat on-hit Regeneration effect
+				ACTION_IF NOT FILE_EXISTS_IN_GAME ~alterh.vvc~ BEGIN 
+				COPY ~rgr_warden/resources/vvc/alterh.vvc~ ~override~
+				COPY ~rgr_warden/resources/bam/alterh.bam~ ~override~
+				END
+					ACTION_IF NOT FILE_EXISTS_IN_GAME ~#eff_e04.wav~ BEGIN 
+					COPY ~rgr_warden/resources/wav/#eff_e04.wav~ ~override~
+					END
+						ACTION_IF NOT FILE_EXISTS_IN_GAME ~#eff_p07.wav~ BEGIN 
+						COPY ~rgr_warden/resources/wav/#eff_p07.wav~ ~override~
+						END
+			
+			COPY ~rgr_warden/spl/dtkwdar2.spl~	~override~	//Forest Stalker's Bramblecoat on-hit Regeneration effect
 			LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@4015) END
 				COPY_EXISTING ~kaarund.cre~ ~override~	//adding to Arundel - Kuldahar
 				ADD_CRE_ITEM ~dtkwdar3~ #0 #0 #0 ~NONE~ ~ARMOR~		//Forest Stalker's Bramblecoat +5
+				BUT_ONLY
 END
 				
 				
@@ -461,8 +572,7 @@ COPY ~rgr_warden/itm/dtkwdar2.itm~	~override~	//Forest Stalker's Bramblecoat +4
 		SAY NAME2 @5040
 		SAY UNIDENTIFIED_DESC @5032		
 		SAY DESC @5041
-			COPY ~rgr_warden/spl/dtkwdar2.spl~	~override~	//Forest Stalker's Bramblecoat on-hit Barkskin effect
-			LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@4005) END
+			COPY ~rgr_warden/spl/dtkwdar4.spl~	~override~	//base spell for armor on hit effect
 END
 			
 
@@ -473,8 +583,7 @@ ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 		SAY NAME2 @5042
 		SAY UNIDENTIFIED_DESC @5032		
 		SAY DESC @5043
-			COPY ~rgr_warden/spl/dtkwdar3.spl~	~override~	//Forest Stalker's Bramblecoat on-hit Barkskin effect
-			LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@4005) END
+			COPY ~rgr_warden/spl/dtkwdar5.spl~	~override~	//base spell for armor on hit effect
 END
 			
 
@@ -528,11 +637,15 @@ END
 					ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 						COPY_EXISTING ~hlketta.cre~ ~override~
 						ADD_CRE_ITEM ~dtkwdxb1~ #40 #0 #0 ~NONE~ ~WEAPON~ EQUIP TWOHANDED	//Ketta in Guarded Compound Second Floor
+						BUT_ONLY
 						END
 						
 					ACTION_IF GAME_IS ~iwdee~ BEGIN
 						EXTEND_BOTTOM ~ar4005.bcs~ ~rgr_warden/baf/ar4005.baf~	//War Chest 6 in Yxunomei's lair
-						END		
+						END
+
+
+						
 		
 ////////////////////////////////////
 /////// Adding Creatures   /////////          
@@ -623,7 +736,7 @@ END
    // appended to ALIGNMNT.2da
    ~DTKWARDN               0       0       0       1       1      1       1       1      1~
    // appended to DUALCLAS.2da
-   ~DTKWARDN               0       0       0       0       0       1~
+   ~DTKWARDN               0       0       0       0       0       0~
   
    // path to your CLAB-style 2da file
    ~override/dtkwardn.2da~
@@ -664,7 +777,7 @@ END
 			// CLSWPBON.2DA		GETS_PROF_APR       UNARMED_DIVISOR     ZERO_SKILL_THAC0
 			//clswpbon	= ~0                   0                   3~																							// Inherit from parent class
 			// NUMWSLOT.2DA		SLOTS
-			//numwslot	= ~2~																																	// Inherit from parent class
+			//numwslot	= ~2~																																// Inherit from parent class
 			// THIEFSKL.2DA		START_POINTS       LEVEL_POINTS
 			//thiefskl	= 			~40					20~																																	// Inherit from parent class
 			// TRAPLIMT.2DA		LIMIT
@@ -672,7 +785,7 @@ END
 			// CLASCOLR.2DA METAL     MINOR_CLOTH     MAIN_CLOTH     LEATHER     ARMOR
 			//clascolr	= ~66        136             136            66          66~
 			// CLASISKL.2DA		START_POINTS     OPEN_LOCKS     FIND_TRAPS     MOVE_SILENTLY     HIDE_IN_SHADOWS     DETECT_ILLUSION     SET_TRAPS
-			clasiskl	=		~0                    0             0               0                  0                   0                10~					// Inherit from parent class
+			clasiskl	=		~0                    0             0               0                  0                   0                15~					// Inherit from parent class
 			// THIEFSCL.2DA       PICK_POCKETS     OPEN_LOCKS     FIND_TRAPS     MOVE_SILENTLY     HIDE_IN_SHADOWS     DETECT_ILLUSION     SET_TRAPS     STEALTH
 			thiefscl	=			~0                0               0              100                100                  0                 100           0~	// Inherit from parent class
 			// HPCLASS.2DA		TABLE
